@@ -1,12 +1,11 @@
 <h1>Welcome To Message Board!</h1>
 
-Hope you found the answers you were looking for!
+<p>Hope you found the answers you were looking for!</p>
 
+<div>
 <ul>
   {{#each model as |question|}}
-  <li>{{question.author}} {{question.post}}</li>
+  <li>{{question-tile question=question}}</li>
   {{/each}}
 </ul>
-
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+</Div>
