@@ -5,7 +5,10 @@
 <div class="jumbotron">
 
   {{#each model as |question|}}
-  <li>{{question-tile question=question destroyQuestion="destroyQuestion"}}</li>
+  <h2>{{question-tile question=question destroyQuestion="destroyQuestion"}}</h2>
   {{/each}}
 
 </div>
+
+
+{{new-question saveQuestion="saveQuestion"}}
